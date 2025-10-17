@@ -19,7 +19,7 @@ class Solution{
     int maxDepth(TreeNode *root)
     {
         if(root == nullptr) return 1;
-        return 1+ min(maxDepth(root->left), maxDepth(root->right));
+        return 1+ max(maxDepth(root->left), maxDepth(root->right));
     }
 };
 
